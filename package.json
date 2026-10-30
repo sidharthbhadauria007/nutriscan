@@ -1,0 +1,31 @@
+{
+  "name": "nutriscan-ai",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "server": "node backend/server.js",
+    "client": "vite frontend --host --port 5173",
+    "dev": "vite frontend --host --port 5173",
+    "build": "vite build frontend",
+    "preview": "vite preview frontend"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.6.2",
+    "cors": "^2.8.6",
+    "express": "^4.21.2",
+    "lucide-react": "^1.62.0",
+    "multer": "^2.5.0",
+    "postcss": "^8.5.32",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^3.4.19"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.5"
+  }
+}
