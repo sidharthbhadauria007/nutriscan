@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    background-color: #f9fafb;
+    color: #111827;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Premium Light & Mint Green Soft Diffused Shadows */
+.shadow-clean-xs {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+}
+
+.shadow-clean-sm {
+  box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.05), 0 1px 4px -1px rgba(0, 0, 0, 0.02);
+}
+
+.shadow-clean-md {
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.06), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+}
+
+.shadow-clean-lg {
+  box-shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.08), 0 6px 16px -4px rgba(0, 0, 0, 0.03);
+}
+
+.shadow-clean-float {
+  box-shadow: 0 24px 60px -12px rgba(0, 0, 0, 0.1), 0 8px 24px -6px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-mint-glow {
+  box-shadow: 0 10px 30px -5px rgba(16, 185, 129, 0.35);
+}
+
+/* Green Scanning Laser Line over uploaded meal */
+@keyframes laserSweepGreen {
+  0% { top: 0%; opacity: 0.85; }
+  50% { top: 96%; opacity: 1; }
+  100% { top: 0%; opacity: 0.85; }
+}
+
+.laser-beam-mint {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, #10b981 25%, #34d399 50%, #10b981 75%, transparent 100%);
+  box-shadow: 0 0 16px 3px rgba(16, 185, 129, 0.7);
+  animation: laserSweepGreen 2s ease-in-out infinite;
+  z-index: 20;
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
